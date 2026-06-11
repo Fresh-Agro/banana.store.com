@@ -151,7 +151,7 @@
 <span>/</span>
 <a class="hover:text-primary" href="#">Vegetables</a>
 <span>/</span>
-<span class="text-on-surface">Local Tomato</span>
+<span class="text-on-surface">Banana</span>
 </nav>
 <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
 <!-- Product Gallery -->
@@ -177,7 +177,7 @@
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span> In Stock
                         </span>
 </div>
-<h1 class="font-headline-xl text-headline-xl text-on-surface mb-2">Local Tomato</h1>
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-2">Banana</h1>
 <p class="text-on-surface-variant font-body-md leading-relaxed">
                         Hand-picked from the lush fields of Bogra. These chilies are known for their sharp heat and vibrant aroma. Perfect for tempering lentils, making chutneys, or adding a kick to your daily curries.
                     </p>
@@ -192,20 +192,16 @@
 <label class="block font-label-md text-on-surface mb-3">Select Weight</label>
 <div class="grid grid-cols-4 gap-3">
 <button class="weight-btn border-2 border-primary bg-primary-container/10 py-3 rounded-lg text-center transition-all group active:scale-95" onclick="updateWeight(500, 45, this)">
-<span class="block font-bold text-primary">500g</span>
-<span class="text-xs text-primary/80">৳ 45</span>
+<span class="block font-bold text-primary">1 doz</span>
+<span class="text-xs text-primary/80">৳ 95</span>
 </button>
 <button class="weight-btn border border-border-subtle hover:border-primary py-3 rounded-lg text-center transition-all group active:scale-95" onclick="updateWeight(1000, 85, this)">
-<span class="block font-bold text-on-surface">1kg</span>
-<span class="text-xs text-on-surface-variant">৳ 85</span>
+<span class="block font-bold text-on-surface">2 doz</span>
+<span class="text-xs text-on-surface-variant">৳ 180</span>
 </button>
 <button class="weight-btn border border-border-subtle hover:border-primary py-3 rounded-lg text-center transition-all group active:scale-95" onclick="updateWeight(2000, 160, this)">
-<span class="block font-bold text-on-surface">2kg</span>
-<span class="text-xs text-on-surface-variant">৳ 160</span>
-</button>
-<button class="weight-btn border border-border-subtle hover:border-primary py-3 rounded-lg text-center transition-all group active:scale-95" onclick="updateWeight(5000, 380, this)">
-<span class="block font-bold text-on-surface">5kg</span>
-<span class="text-xs text-on-surface-variant">৳ 410</span>
+<span class="block font-bold text-on-surface">5 doz</span>
+<span class="text-xs text-on-surface-variant">৳ 460</span>
 </button>
 </div>
 </div>
@@ -215,7 +211,7 @@
   <button class="px-4 py-2 hover:bg-surface-container-low transition-colors" onclick="changeWeight(-500)">
     <span class="material-symbols-outlined text-lg">remove</span>
   </button>
-  <span id="weightDisplay" class="px-4 py-2 font-bold border-x border-border-subtle">500g</span>
+  <span id="weightDisplay" class="px-4 py-2 font-bold border-x border-border-subtle">1 doz</span>
   <button class="px-4 py-2 hover:bg-surface-container-low transition-colors" onclick="changeWeight(500)">
     <span class="material-symbols-outlined text-lg">add</span>
   </button>
@@ -478,11 +474,11 @@
             btn.querySelector('.text-xs').classList.add('text-primary/80');
             btn.querySelector('.text-xs').classList.remove('text-on-surface-variant');
         }
-         let weight = 500;
+         let weight = 1;
 
   function changeWeight(amount) {
     weight += amount;
-    if (weight < 500) weight = 500; // minimum 500g
+    if (weight < 1) weight = 1; // minimum 500g
     document.getElementById('weightDisplay').textContent = weight + 'g';
   }
     </script>
